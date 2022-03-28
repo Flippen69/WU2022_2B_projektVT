@@ -332,6 +332,9 @@
     width: auto;
     /* background: rgb(242, 243, 245); */
     background-image: url(../img/blob.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center, 50%, 50%;
     /* background:lightgray; */
     /* background-position:right; */
 }
@@ -345,7 +348,7 @@
 }
 
 .container {
-    border: 2px solid #dedede;
+    border: 2px #727479;
     background-color: #ffff;
     position: relative;
     border-radius: 5px;
@@ -381,7 +384,7 @@
 }
 
 .contact .burger div{
-    background:#707fa0;
+    background:#727479;
 }
 
 .contact .menu span{
