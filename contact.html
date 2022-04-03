@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/oco1ppk.css">
     <title>Document</title>
 </head>
-<body class="contact">
+<body class="contact_page">
 
     <nav class="navbar">
-        <article class="logo"><span>South Yacht</span></article>
+        <article class="logo"><span><a href="index.html">South Yacht</a></span></article>
 
         <nav class="navbar_wrapper">
             <main id="menu">
-                <div class="logo"><span>South Yacht</span></div>
+                <div class="logo"><span><a href="index.html">South Yacht</a></span></div>
             </main>
 
-            <div id="contact"><a href="contact.html">Kontakt</a></div>
-            <div id="about"><a href="#">Om oss</a></div>
             <div id="sortiment"><a href="sortiment.html">Sortiment</a></div>
+            <div id="contact"><a href="contact.html">Kontakt</a></div>
+            <div id="review"><a href="review.html">Recensioner</a></div>
         </nav>
 
         <section class="burger">
@@ -30,64 +29,54 @@
         </section>
     </nav>
 
-    <section class="review">
-        <article class="container">
-            <div class="user">Gunter Kirch</div>
-            <p>Nett und professionell! Verloren gegangener Fender verhältnismäßig teuer</p>
-            <span class="time">2022-03-28</span>
-            <br>
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-        </article>    
+    <section class="contact">
+        <section class="container">
+            <div class="contactInfo">
+                <section class="box">
+                    <img src="img/map_pin.svg" class="icon">
+                    <span class="text">
+                        <h3>Adress</h3>
+                        <p>Origovägen 4<br>Johanneberg, Göteborg<br>412 58</p>
+                    </span>
+                </section>
 
-        <article class="container">
-            <div class="user">Gunter Kirch</div>
-            <p>Nett und professionell! Verloren gegangener Fender verhältnismäßig teuer</p>
-            <span class="time">2022-03-28</span>
-            <br>
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/half.star.svg" alt="" class="stars">
-        </article>
+                <section class="box">
+                    <img src="img/phone.svg" class="icon">
+                    <span class="text">
+                        <h3>Telefon</h3>
+                        <p>0709376516</p>
+                    </span>
+                </section>
 
-        <article class="container">
-            <div class="user">Gunter Kirch</div>
-            <p>Nett und professionell! Verloren gegangener Fender verhältnismäßig teuer</p>
-            <span class="time">2022-03-28</span>
-            <br>
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/half.star.svg" alt="" class="stars">
-        </article>
-        
-        <article class="container">
-            <div class="user">Gunter Kirch</div>
-            <p>Nett und professionell! Verloren gegangener Fender verhältnismäßig teuer</p>
-            <span class="time">2022-03-28</span>
-            <br>
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-        </article>
-
-        <article class="container">
-            <div class="user">Gunter Kirch</div>
-            <p>Nett und professionell! Verloren gegangener Fender verhältnismäßig teuer</p>
-            <span class="time">2022-03-28</span>
-            <br>
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/star.svg" alt="" class="stars">
-            <img src="img/half.star.svg" alt="" class="stars">
-        </article>
+                <section class="box">
+                    <img src="img/mail.svg" class="icon">
+                    <span class="text">
+                        <h3>Email</h3>
+                        <p>Filiph.sooder@elev.ga.ntig.se</p>
+                    </span>
+                </section>
+            </div>
+            <fieldset class="contactForm" >
+                <form method="post" action="mailto:filiph.sooder@elev.ga.ntig.se" enctype="text/plain">
+                    <h2>Skicka Meddelande</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="requried">
+                        <span>Namn</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Skriv ditt meddelande</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </fieldset>
+        </section>
     </section>
 
     <script src="js/index.js"></script>
