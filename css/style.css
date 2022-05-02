@@ -75,19 +75,21 @@ a{
 }
 
 .navbar{
-    background: #707fa0;
+    /* background: #707fa0; */
+    background: transparent;
 }
 
 .navbar .logo{
     color: #ffff;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: cursive;
+    font-family: Oxygen;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     justify-content: center;
     margin-top: 2px;
+    text-transform: uppercase;
 }
 
 .navbar .logo span{
@@ -658,20 +660,29 @@ a{
 }
 
 @media screen and (min-width: 740px) {  
-    /* .navbar_wrapper{
-    display: grid;
-    background-color: rgb(112, 127, 160);
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    position: relative;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "men sor con rev";
-    transition: all 0.6s;
-    z-index: 1;
-    } */
+    .navbar{
+           /* display: none; */
+    }
+
+    .navbar .logo{
+        font-size: 40px;
+    }
+    .navbar_wrapper{
+        display: grid;
+        /* background-color: rgb(112, 127, 160); */
+        align-items: center;
+        height: 80px;
+        top: 0;
+        /* bottom: 0; */
+        width: 100%;
+        position: absolute;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "men sor con rev";
+        transition: all 0.6s;
+        /* z-index: 1; */
+    }
 
     .main_image{
         background: url(../img/boat9.jpg);
@@ -736,12 +747,13 @@ a{
     }
 
     .navbar{
-        background: #707fa0;
+        /* background: #707fa0; */
+
         position: fixed;
         z-index: 1;
     }
     .burger{
-        /* display: none; */
+        display: none;
     }
 
     
