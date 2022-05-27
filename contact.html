@@ -1,84 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body class="contact_page">
+  </head>
+  <body class="contact_page">
 
-    <nav class="navbar">
-        <article class="logo"><span><a href="index.html">South Yacht</a></span></article>
-
-        <nav class="navbar_wrapper">
-            <main id="menu">
-                <div class="logo"><span><a href="index.html">South Yacht</a></span></div>
-            </main>
-
-            <div id="sortiment"><a href="sortiment.html">Sortiment</a></div>
-            <div id="contact"><a href="contact.html">Kontakt</a></div>
-            <div id="review"><a href="review.html">Recensioner</a></div>
-        </nav>
-
-        <section class="burger">
-            <div id="line1"></div>
-            <div id="line2"></div>
-            <div id="line3"></div>
-        </section>
+    <nav class="nav_grid">
+      <section id="logo">
+          <p class="logo_text"><a href="index.html">SOUTH YACHT</a></p>
+      </section>
+      <section id="sortiment"><a href="sortiment.html">SORTIMENT</a></section>
+      <section id="contact"><a href="contact.html">KONTAKT</a></section>
+      <section id="review"><a href="review.html">RECENTIONER</a></section>
+      <section class="burger">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+      </section>
     </nav>
 
     <section class="contact">
-        <section class="container">
-            <div class="contactInfo">
-                <section class="box">
-                    <img src="img/map_pin.svg" class="icon">
-                    <span class="text">
-                        <h3>Adress</h3>
-                        <p>Origovägen 4<br>Johanneberg, Göteborg<br>412 58</p>
-                    </span>
-                </section>
+      <section class="container">
+        <div class="contactInfo">
+          <section class="box">
+            <img src="img/map_pin.svg" class="icon" />
+            <span class="text">
+              <h3>Adress</h3>
+              <p>Origovägen 4<br />Johanneberg, Göteborg<br />412 58</p>
+            </span>
+          </section>
 
-                <section class="box">
-                    <img src="img/phone.svg" class="icon">
-                    <span class="text">
-                        <h3>Telefon</h3>
-                        <p>0709376516</p>
-                    </span>
-                </section>
+          <section class="box">
+            <img src="img/phone.svg" class="icon" />
+            <span class="text">
+              <h3>Telefon</h3>
+              <p>0709376516</p>
+            </span>
+          </section>
 
-                <section class="box">
-                    <img src="img/mail.svg" class="icon">
-                    <span class="text">
-                        <h3>Email</h3>
-                        <p>Filiph.sooder@elev.ga.ntig.se</p>
-                    </span>
-                </section>
+          <section class="box">
+            <img src="img/mail.svg" class="icon" />
+            <span class="text">
+              <h3>Email</h3>
+              <p>Filiph.sooder@elev.ga.ntig.se</p>
+            </span>
+          </section>
+        </div>
+        <fieldset class="contactForm">
+          <form
+            method="post"
+            action="mailto:filiph.sooder@elev.ga.ntig.se"
+            enctype="text/plain"
+          >
+            <h2>Skicka Meddelande</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="requried" />
+              <span>Namn</span>
             </div>
-            <fieldset class="contactForm" >
-                <form method="post" action="mailto:filiph.sooder@elev.ga.ntig.se" enctype="text/plain">
-                    <h2>Skicka Meddelande</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="requried">
-                        <span>Namn</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <textarea required="required"></textarea>
-                        <span>Skriv ditt meddelande</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send">
-                    </div>
-                </form>
-            </fieldset>
-        </section>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Skriv ditt meddelande</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" />
+            </div>
+          </form>
+        </fieldset>
+      </section>
     </section>
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
